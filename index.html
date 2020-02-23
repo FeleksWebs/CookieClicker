@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="IndexStyle.css">
+    <meta http-equiv="refresh" content="" >
+
+    
+</head>
+<body >
+    <div class="TopHeader">
+    <button id="cookie_btn" onclick="addCookie()" >
+        <img src="./Art&Icons/cookie.png" id="cookie_img">
+    </button>
+    </div>
+
+    <div id="cookie_number">Press the cookie!</div>
+    <div id="PowersUps_OuterDiv">
+        
+        <div id="Powers">
+            <h1 style="text-align: center;">AutoClick</h1>
+            <div id="AutoPow">
+                <button class="PowerDiv" id="AutoPow1" onclick="AutoPerk(this.id)" disabled><h1>Basic Auto</h1><br><h1 id="CheckCost_AutoPow1" class="Power_Cost"></h1></button>
+                <button class="PowerDiv" id="AutoPow2" onclick="AutoPerk(this.id)" disabled><h1>Pro Auto</h1><br><h1 id="CheckCost_AutoPow2" class="Power_Cost"></h1></button>
+                <button class="PowerDiv" id="AutoPow3" onclick="AutoPerk(this.id)" disabled><h1>Epic Auto</h1><br><h1 id="CheckCost_AutoPow3" class="Power_Cost"></h1></button>
+            </div>
+        </div>
+
+
+        <div id="Powers">
+            <h1 style="text-align: center;">Effectivenes</h1>
+            <div id="EffPow">
+                <button class="PowerDiv" id="EffPow1" onclick="EffPerk(this.id)" disabled><h1>Basic Effectivenes</h1><br><h1 id="CheckCost_EffPow1" class="Power_Cost"></h1></button>
+                <button class="PowerDiv" id="EffPow2" onclick="EffPerk(this.id)" disabled><h1>Pro Effectivenes</h1><br><h1 id="CheckCost_EffPow2" class="Power_Cost"></h1></button>
+                <button class="PowerDiv" id="EffPow3" onclick="EffPerk(this.id)" disabled><h1>Epic Effectivenes</h1><br><h1 id="CheckCost_EffPow3" class="Power_Cost"></h1></button>
+            </div>
+        </div>
+
+        <div id="Powers">
+            <h1 style="text-align: center;">PowerClick</h1>
+            <div id="PowClick">
+                <button class="PowerDiv" id="PowClick1" onclick="PowPerk(this.id)" disabled><h1>Basic Power Click</h1><br><h1 id="CheckCost_PowClick1" class="Power_Cost"></h1></button>
+                <button class="PowerDiv" id="PowClick2" onclick="PowPerk(this.id)" disabled><h1>Pro Power Click</h1><br><h1 id="CheckCost_PowClick2" class="Power_Cost"></h1></button>
+                <button class="PowerDiv" id="PowClick3" onclick="PowPerk(this.id)" disabled><h1>Epic Power Click</h1><br><h1 id="CheckCost_PowClick3" class="Power_Cost"></h1></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <h1>***Stats***</h1>
+        <p>Auto Click :</p><p id="AutoStats"></p><br>
+        <p>Effectivenes :</p><p id="EffPowStats"></p><br>
+        <p>Power Click :</p><p id="PowClickStats"></p>
+    </div>
+
+
+
+    
+    
+    
+    <script type="text/javascript" src="./JsMath/PerkCosts.js"></script>
+    <script type="text/javascript" src="./JsMath/NextCost.js"></script>
+    <script type="text/javascript" src="./JsMath/PowerUps.js"></script>
+
+</body>
+</html>
