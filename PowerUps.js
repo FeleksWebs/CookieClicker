@@ -84,7 +84,7 @@ function AutoPerk(id){
          ChildNode[2].innerHTML = ObjectValues[key][id].cost 
      }
  })
- document.getElementById("AutoStats").innerHTML = PowerClick
+ document.getElementById("AutoStats").innerHTML = AutoClicked
     CheckButtonValues()    
 }
 
